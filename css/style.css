@@ -1,11 +1,46 @@
-html *{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Open+Sans');
+
+/*
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Bowlby One SC', cursive;
+
+
+
+*/
+
+h1{
+    font-family: 'Bowlby One SC', cursive;
+    font-weight: normal;
+    font-size: 3em;
+}
+body{
+  background: #F4C1A7;
+  color: #744134;
+  font-family: 'Open Sans', sans-serif;
 }
 
-body{
-  background: #ca3;
-  color: #520;
-  font-family: verdana, sans-serif;
+p{
+  font-size: 1.5em;
+  overflow: hidden;
+  padding: 1em;
+  max-width: 960px;
+  margin: 0 auto;
+}
+p img{
+  width: 50%;
+  float: right;
+  max-width: 100%;
+}
+
+.wrapper{
+
+}
+
+h1{
+  text-align: center;
+}
+.parallax-window{
+  min-height: 300px;
+  background: transparent;
 }
