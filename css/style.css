@@ -11,12 +11,15 @@
 
 html *{
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 h1{
     font-family: 'Bowlby One SC', cursive;
     font-weight: normal;
     font-size: 3em;
+
 }
 body{
   background: #F4C1A7;
@@ -32,8 +35,50 @@ p{
   margin: 0 auto;
 }
 
+.meny{
+  background: #744134;
+  color: #F4C1A7;
+  font-size: 2em;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  z-index: 99;
+  padding: 20px;
+}
+
+nav{
+  padding: 20px;
+}
+
+nav ol{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav .closeButton{
+     position: relative;
+     left: 100%;
+
+
+     background: #F4C1A7;
+     color: #744134;
+     padding: 5px;
+ }
+
+ .menuButton{
+   font-size: 2em;
+   position: fixed;
+   top: 20px;
+   left: 20px;
+   background: #F4C1A7;
+   padding: 5px;
+ }
+
 footer{
-  font-size: 1.5em;
+  font-size: 3em;
+  border-top: 2px solid;
 }
 
 p img{
