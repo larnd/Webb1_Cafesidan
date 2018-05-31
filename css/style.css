@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Open+Sans');
+
+/*
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Bowlby One SC', cursive;
+
+
+
+*/
+
+html *{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1{
+    font-family: 'Bowlby One SC', cursive;
+    font-weight: normal;
+    font-size: 3em;
+
+}
+body{
+  background: #F4C1A7;
+  color: #744134;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p{
+  font-size: 1.5em;
+  overflow: hidden;
+  padding: 1em 0;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.meny{
+  background: #744134;
+  color: #F4C1A7;
+  font-size: 2em;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  z-index: 99;
+  padding: 20px;
+}
+
+nav{
+  padding: 20px;
+}
+
+nav ol{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav .closeButton{
+     position: relative;
+     left: 100%;
+
+     color: #F4C1A7;
+     padding: 5px;
+ }
+
+ .menuButton{
+   font-size: 2em;
+   position: fixed;
+   top: 20px;
+   left: 20px;
+   background: #F4C1A7;
+   padding: 5px;
+ }
+
+footer{
+  font-size: 3em;
+  border-top: 2px solid;
+}
+
+p img{
+  width: 50%;
+  float: right;
+  max-width: 100%;
+}
+
+.wrapper{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1{
+  text-align: center;
+}
+.parallax-window{
+  min-height: 300px;
+  background: transparent;
+}
