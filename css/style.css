@@ -35,17 +35,22 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
-.topimage{
+
+
+.wrapper{
+  max-width: 960px;
+  margin: 0 auto;
   height: 100vh;
+  position: relative;
+  padding: 1em 3em;
+
 }
 
 p{
   font-size: 1.5em;
-  overflow: hidden;
- padding: 0 3em;
-  max-width: 960px;
+
   margin: 0 auto;
-  margin-top: 80px;
+
 }
 
 .meny{
@@ -58,12 +63,12 @@ p{
   left: -250px;
   width: 250px;
   z-index: 99;
-  padding: 20px;
+  padding: 0 20px 0 20px;
 
 }
 
 nav{
-  padding: 20px;
+
 }
 
 nav ol{
@@ -79,9 +84,9 @@ nav a{
 
 nav .closeButton{
      position: relative;
-     left: 100%;
+     left: 95%;
+
      color: #F4C1A7;
-     padding: 5px;
  }
 
  .menuButton{
@@ -106,19 +111,10 @@ p img{
   max-width: 100%;
 }
 
-.wrapper{
-  max-width: 960px;
-  margin: 0 auto;
-  height: 100vh;
-}
+
 
 .wrapper .fas{
-  display: block;
-  margin: 0 auto;
-  width: 5px;
-  font-size: 3em;
-  position: relative;
-  top: 45%;
+
 }
 
 
@@ -130,4 +126,13 @@ p img{
 a{
   text-decoration: none;
   color: inherit;
+}
+
+.wrapper a{
+  display: block;
+  width: 3em;
+  font-size: 3em;
+  position: absolute;
+  bottom: 2em;
+  left: 48%;
 }
