@@ -23,8 +23,10 @@ h1{
   color: #F4C1A7;
   font-size: 5em;
   text-shadow:
-    3px 3px #744134;
-
+    3px 3px #744134,
+    -3px 3px #744134,
+    3px -3px #744134,
+    -3px -3px #744134;
 }
 
 body{
@@ -33,7 +35,11 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
-
+.topimage{
+  background-image: url("../img/kaffe01.jpg");
+  height: 100vh;
+  background-size: cover;
+}
 
 .wrapper{
   max-width: 960px;
@@ -121,9 +127,13 @@ p img{
   background: transparent;
 }
 
-a{
+a[id]{
   text-decoration: none;
   color: inherit;
+  margin: 0;
+  padding: 0;
+  display:inline-block;
+  float:left;
 }
 
 .wrapper a{
@@ -133,4 +143,5 @@ a{
   position: absolute;
   bottom: 2em;
   left: 48%;
+  color: #744134;
 }
