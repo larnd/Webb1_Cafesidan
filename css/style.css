@@ -46,10 +46,33 @@ body{
   margin: 0 auto;
   height: 100vh;
   position: relative;
-  padding: 1em 3em;
-
+  padding: 20px 66px;
 }
 
+.wrapper a{
+  display: block;
+  width: 3em;
+  font-size: 3em;
+  position: absolute;
+  bottom: 0;
+  left: 48%;
+  color: #744134;
+}
+
+
+a[id]{
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  display:inline-block;
+  float:left;
+}
+
+.wrapper a:hover{
+  color: #946154;
+  bottom: 5px;
+}
 p{
   font-size: 1.5em;
 
@@ -64,8 +87,8 @@ p{
   position: fixed;
   height: 100%;
   top: 0;
-  left: -250px;
-  width: 250px;
+  left: -200px;
+  width: 200px;
   z-index: 99;
   padding: 0 20px 0 20px;
 
@@ -93,11 +116,14 @@ nav .closeButton{
      color: #F4C1A7;
  }
 
+.closeButton:hover, .menuButton:hover{
+  cursor:pointer;
+}
  .menuButton{
-   font-size: 2em;
+   font-size: 40px;
    position: fixed;
-   top: 20px;
-   left: 20px;
+   top: 10px;
+   left: 10px;
    background: #F4C1A7;
    padding: 5px;
    border: 3px solid;
@@ -125,23 +151,25 @@ p img{
 .parallax-window{
   min-height: 100vh;
   background: transparent;
+
 }
 
-a[id]{
-  text-decoration: none;
-  color: inherit;
-  margin: 0;
-  padding: 0;
-  display:inline-block;
-  float:left;
+
+
+/* https://www.smashingmagazine.com/2018/05/guide-css-layout/ */
+
+.cakegallery{
+  display: flex;
+  flex: 1 1 200px; /* flex-grow, flex-shrink, flex-basis */
+  justify-content:flex-start;
 }
 
-.wrapper a{
-  display: block;
-  width: 3em;
-  font-size: 3em;
-  position: absolute;
-  bottom: 2em;
-  left: 48%;
-  color: #744134;
+.cake{
+  border: 3px solid rgb(77, 45, 26);
+  padding: 10px;
+  margin: 10px;
+}
+
+.cake img{
+  max-width: 100%;
 }
