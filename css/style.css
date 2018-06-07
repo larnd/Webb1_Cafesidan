@@ -33,6 +33,8 @@ body{
   background: #F4C1A7;
   color: #744134;
   font-family: 'Open Sans', sans-serif;
+  position: relative;
+  min-width: 400px;
 }
 
 .topimage{
@@ -44,9 +46,9 @@ body{
 .wrapper{
   max-width: 960px;
   margin: 0 auto;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
-  padding: 20px 66px;
+  padding: 1em 66px 3em 66px;
 }
 
 .wrapper a{
@@ -60,16 +62,16 @@ body{
 }
 
 
-a[id]{
+a[id], footer a{
   text-decoration: none;
   color: inherit;
-  margin: 0;
+  margin: 0px;
   padding: 0;
   display:inline-block;
   float:left;
 }
 
-.wrapper a:hover{
+.wrapper a:hover, footer a:hover{
   color: #946154;
   bottom: 5px;
 }
@@ -112,7 +114,6 @@ nav a{
 nav .closeButton{
      position: relative;
      left: 95%;
-
      color: #F4C1A7;
  }
 
@@ -127,14 +128,20 @@ nav .closeButton{
    background: #F4C1A7;
    padding: 5px;
    border: 3px solid;
+   z-index: 50;
  }
 
 footer{
   font-size: 3em;
   border-top: 2px solid;
-  text-align: center;
+  display: flex;
+  flex: 1 1 200px;
+  justify-content:center;
 }
 
+footer a{
+  margin: 0 10px;
+}
 p img{
   width: 50%;
   float: right;
@@ -172,4 +179,19 @@ p img{
 
 .cake img{
   max-width: 100%;
+}
+
+@media screen and (max-width: 807px ){ /* Smalare = tårtblock överskuggar topp-länk */
+  h1{
+    font-size: 3em;
+  }
+  .cakegallery{
+    display: block;
+  }
+
+  p img{
+    width: 100%;
+    max-width: 100%;
+  }
+
 }

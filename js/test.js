@@ -4,7 +4,7 @@ $(document).ready(function(){
     $('.meny').animate({'left':'0px'},250);
   });
 
-  $('.closeButton').click(function(){
+  $('.closeButton, a').click(function(){
     $('.meny').animate({'left':'-250px'},250);
   });
 
@@ -22,5 +22,5 @@ $(document).ready(function(){
           }
       }
   });
-  
+
 });
